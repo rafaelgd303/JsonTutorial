@@ -13,7 +13,7 @@ namespace ConsoleApp7Json
             options.WriteIndented = true;
 
             //no need to provide type Product when serializing object
-            string productJson = JsonSerializer.Serialize<Product>(product, options);
+            string productJson = JsonSerializer.Serialize(product, options);
             File.WriteAllText("product.json", productJson);
 
             return productJson;

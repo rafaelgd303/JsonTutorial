@@ -8,14 +8,16 @@ namespace ConsoleApp7Json
         {
             var serialized = OurSerializer.SerializingProduct();
 
+            Console.WriteLine("Serializacja!!!");
             Console.WriteLine(serialized);
-
+            
+            Console.WriteLine("Deserializacja!!!");
             var deserialized = OurDeserializer.DeserializingProduct();
+            Console.WriteLine(deserialized.Description);
             Console.WriteLine(deserialized.Name);
             Console.WriteLine(deserialized.Price);
-            Console.WriteLine(deserialized.Description);
             Console.WriteLine(deserialized.Quantity);
-            Console.WriteLine(deserialized.DateTimeChecked);
+            Console.WriteLine(deserialized.DateTimeDelivery);
 
             Console.ReadKey();
         }

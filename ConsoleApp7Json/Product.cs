@@ -8,7 +8,7 @@ namespace ConsoleApp7Json
         public decimal Price { get; set; }
         public string Description { get; set; }
         public int Quantity { get; set; }
-        public DateTime DateTimeChecked { get; set; }
+        public DateTime DateTimeDelivery { get; set; }
 
         public static Product OurProduct()
         {
@@ -18,7 +18,7 @@ namespace ConsoleApp7Json
                 Price = 2500,
                 Description = "Gaming console",
                 Quantity = 100,
-                DateTimeChecked = DateTime.Now
+                DateTimeDelivery = DateTime.Now.AddDays(2)
             };
             return product;
         }

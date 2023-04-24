@@ -7,7 +7,7 @@ namespace ConsoleApp7Json
     {
         public static Product DeserializingProduct()
         {
-            var jsonProduct = File.ReadAllText("jsonProduct.json");
+            var jsonProduct = File.ReadAllText("product.json");
 
             //must provide type Product when deserializing object
             Product product = JsonSerializer.Deserialize<Product>(jsonProduct);
